@@ -1,0 +1,35 @@
+header {
+    overflow: hidden;
+    max-height: 70vh;
+    
+    p:nth-child(1) {
+        font-size: 6vw;
+    }
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    p {
+        color: gray;
+        font-size: 18px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: dimgrey;
+        font-weight: 600;
+        
+        &:hover {
+            color: dimgray;
+        }
+    }
+}
+
+@media (min-width: 920px){
+    section {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

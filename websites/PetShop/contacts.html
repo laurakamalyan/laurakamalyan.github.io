@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PET SHOP</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Slick sliders -->
+    <link rel="stylesheet" href="css/slick.css">
+    
+</head>
+<body>
+    <div class="top_contacts container-fluid" id="home">
+        <div class="row">
+            <div class="col-sm-4 border_">
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>OUR OFFICE</h6>
+                    <span>123 Street, New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 border_">
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>CALL US</h6>
+                        <span>+012 345 6789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 border_">
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>EMAIL US</h6>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa-solid fa-shop"></i>
+                PET SHOP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul  class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#services" class="nav-link">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#products" class="nav-link">PRODUCT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        
+                        <a href="index.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PAGES</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Pricing plan</li>
+                            <li class="dropdown-item">The team</li>
+                            <li class="dropdown-item">Testimonial</li>
+                            <li class="dropdown-item">Blog grid</li>
+                            <li class="dropdown-item">Blog detail</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">
+                            CONTACTS
+                            <i class="fa-solid fa-arrow-right"></i>    
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+    <!-- End Menu -->
+    
+   
+    <!-- Contact form -->
+    <div id="contacts" class="container">
+        <h2>
+            <span>CONTACT US</span> <br>
+            PLEASE FEEL FREE TO CONTACT US
+        </h2>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <form action="" class="was-validated">
+                    <div class="mb-3 mt-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="mb-3 mt-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="mb-3 mt-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    
+                    <button class="btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="col-md-4 bg-light mt-3 pt-3 pb-3">
+                <div class="row mt-2">
+                    <div class="col-md-3 contact_icons">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>OUR OFFICE</h6>
+                        <span>123 Street, New York, USA</span>
+                    </div>
+                </div>
+                
+                <div class="row mt-2">
+                    <div class="col-md-3 contact_icons">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>CALL US</h6>
+                        <span>+012 345 6789</span>
+                    </div>
+                </div>
+                
+                <div class="row mt-2">
+                    <div class="col-md-3 contact_icons">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h6>EMAIL US</h6>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+                
+                <!-- Google Map -->
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Contact form -->
+        
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer_1 bg-light mt-5 p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>GET IN TOUCH</h5>
+                        <p class="text-secondary">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
+                        <p class="text-secondary"><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                        <p class="text-secondary"><i class="fa-solid fa-envelope"></i> info@example.com</p>
+                        <p class="text-secondary"><i class="fa-solid fa-phone"></i> +012 345 67890</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>QUICK LINKS</h5>
+                        <ul class="text-secondary">
+                            <li><a href="#home"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-arrow-right"></i>About Us</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right"></i>Our Services</a></li>
+                            <li><a href="#team"><i class="fa-solid fa-arrow-right"></i>Meet The Team</a></li>
+                            <li><a href="#articles"><i class="fa-solid fa-arrow-right"></i>Lagest Blog</a></li>
+                            <li><a href="contacts.html"><i class="fa-solid fa-arrow-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>POPULAR LINKS</h5>
+                        <ul class="text-secondary">
+                            <li><a href="#home"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-arrow-right"></i>About Us</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-arrow-right"></i>Our Services</a></li>
+                            <li><a href="#team"><i class="fa-solid fa-arrow-right"></i>Meet The Team</a></li>
+                            <li><a href="#articles"><i class="fa-solid fa-arrow-right"></i>Lagest Blog</a></li>
+                            <li><a href="contacts.html"><i class="fa-solid fa-arrow-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>NEWSLETTER</h5>
+                        <form action="" id="email">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                                <button class="btn">SIGN UP</button>
+                            </div>
+                        </form>
+
+                        <p class="h6 mt-4">FOLLOW US</p>
+
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+
+                    </div>
+                </div>
+            </div>
+
+                <ul class="nav justify-content-center mt-4">
+                    <li class="nav-item p-1"><a href="#">Terms & Conditions |</a></li>
+                    <li class="nav-item p-1"><a href="#"> Privacy Policy |</a></li>
+                    <li class="nav-item p-1"><a href="#"> Customer Support |</a></li>
+                    <li class="nav-item p-1"><a href="#"> Payments |</a></li>
+                    <li class="nav-item p-1"><a href="#"> Help |</a></li>
+                    <li class="nav-item p-1"><a href="#"> FAQs</a></li>
+                </ul>
+        </div>
+
+        <div class="bg-dark text-light p-3">
+            &copy; PET SHOP. All Right Reserved.
+            <span>Designed by HTML Codex</span>
+        </div>
+    </footer>
+    
+    
+
+<!-- Scrool top button -->
+<a href="#home" class="btn btn-dark scroll_top_btn"><i class="fa-solid fa-arrow-up"></i></a>
+    
+<!-- JQuery -->
+<script src="js/jquery-3.6.1.js"></script>
+    
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Slick JQuery plugin for carousel -->
+<script src="js/slick.min.js"></script>
+   
+<!-- JQuery validate plugin -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+
+<!-- Google map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ZIM0834z_vN3w-ii4-hDKoFzcqNkG3g&callback=initMap"></script>
+
+<!-- JS/JQuery script-->
+<script src="js/script.js"></script>
+    
+</body>
+</html>

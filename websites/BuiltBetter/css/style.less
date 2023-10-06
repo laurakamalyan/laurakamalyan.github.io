@@ -1,0 +1,308 @@
+@color: #ffb607;
+
+.nav-link.active {
+    color: @color;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .navbar {
+        
+        a {
+            color: #000;
+            font-weight: 600;
+            
+            &:hover {
+                color: @color;
+            }
+        }
+        
+        .navbar-brand img {
+            width: 100%;
+        }
+        
+        .navbar-toggler {
+            border-color: @color; 
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 182, 7, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        }
+        
+        .ms-auto {
+            .nav-item:nth-child(1) {
+                padding: 8px 8px 8px 0;
+                color: @color;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .slider {
+        position: relative;
+        
+        .btn-prev, .btn-next {
+            background-color: #000;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+        }
+        
+        .btn-prev {
+            left: 0;
+            z-index: 1;
+        }
+        
+        .btn-next {
+            right: 0;
+        }
+        
+        .display-1 {
+            margin-top: 100px;
+            font-weight: 600;
+        }
+        
+        p.text {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+        .button {
+            margin-top: 150px;
+        }
+    }
+}
+
+@media (max-width: 335px) {
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+}
+
+.title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    
+    p {
+        color: gray;
+    }
+}
+
+button.btn {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#services {
+    p {
+        color: grey;
+    }
+}
+
+#about {
+    background-color: @color;
+    padding-top: 70px;
+}
+
+#furnitures {
+    padding-bottom: 50px;  
+    
+    .img_content {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .hover_img {
+        background-color: @color;
+        color: #fff;
+        border-radius: 50%;
+        width: 27%;
+        height: 40%;
+        text-align: center;
+        padding-top: 8%;
+        font-size: 30px;
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+    
+    .img_content:hover .hover_img {
+        display: block;
+    }
+}
+
+#who_we {
+    background-image: url(../img/bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+#projects {
+    padding-bottom: 50px;
+    
+    div.m-1 {
+        position: relative;
+        p {
+            margin-top: -20%;
+            text-align: center;
+        }
+    }
+    
+    .btn-prev, .btn-next {
+        background-color: #000;
+        color: #fff;
+        border-radius: 0;
+        position: absolute;
+        top: 50%;
+    }
+    
+    .btn-next {
+        right: -40px;
+    }
+    
+    .btn-prev {
+        left: -40px;
+        z-index: 1;
+    }
+}
+
+#clients {
+    padding-bottom: 50px;
+    
+    .left, .right {
+        border: 1px solid;
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+        margin-top: 20px;
+    }
+    
+    .d-flex {
+        width: 60%;
+        
+        div {
+            padding: 20px;
+        }
+    }
+    
+    .slick-slide img {
+        display: inline;
+    }
+    
+    .slick-dots {
+        
+        li {
+            list-style-type: none;
+            
+            &.slick-active button {
+                background-color: #000;
+                color: #000;
+            }
+        }
+        
+        button {
+            background-color: @color;
+            color: @color;
+            border: 0;
+            border-radius: 50%;
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    #clients .d-flex {
+        width: 100%;
+    } 
+    
+    .slick-list {
+        text-align: center;
+    }
+    
+    .slick-dots {
+        margin: 20px auto;
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .d-flex {
+        display: inline !important;
+    }
+}
+
+
+#contact {
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    
+    input, textarea {
+        margin-top: 20px;
+    }
+    
+    button {
+        font-weight: 600;
+        margin-top: 40px;
+    }
+}
+
+
+footer {
+    .bg-dark {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    .input-group {
+        border-bottom: 1px solid #fff;
+        height: 60px;
+    }
+    
+    input.form-control,
+    .input-group>.form-control, .input-group>.form-select {
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        &:focus {
+            border: 0;
+        }
+        
+    }
+    
+    button {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    
+    i {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+

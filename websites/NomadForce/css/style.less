@@ -1,0 +1,256 @@
+@color: #ffc107;
+@text-color: #717275;
+
+header {
+    position: relative;
+    text-align: center;
+    
+    video {
+        width: 100%;
+    }
+    
+    .header_text {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        margin: 0 auto;
+        color: #fff;
+        
+        h1 {
+            font-size: 8vw;
+        }
+        
+        p {
+            font-weight: 700;
+            font-size: 3vw;
+        }
+    }
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 10px 12px @text-color;
+    
+    .navbar-brand {
+        color: @color;
+    }
+    
+    a.nav-link {
+        font-weight: 700;
+        color: @text-color;
+        div {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: @color;
+            visibility: hidden;
+        }
+        
+        &.active {
+            color: #000 !important; 
+            
+            div {
+                visibility: visible;
+            }
+        }
+        
+        &:hover {
+            color: #000;
+            
+            div {
+                visibility: visible;
+            }
+        }
+    }
+    
+    .navbar-toggler {
+        border-color: @color; 
+        background-color: @color;
+        
+        &.active {
+            border-color: @color;
+        }
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+    }
+}
+
+#item1 {
+    padding-top: 100px;
+    
+    p {
+        color: @text-color;
+    }
+}
+
+#item2 {
+    padding-top: 70px;
+    
+    .col-lg-3, .col-lg-6 {
+        padding: 0;
+    }
+    
+    .col-lg-3:nth-child(2) {
+        color: #fff;
+        padding: 20px 40px 0;
+    
+    
+        p{
+            &:nth-child(1) {
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            &:nth-child(2) {
+                font-size: 18px;
+                color: @text-color;
+            }
+
+            span {
+                background-color: #000;
+            }
+        }
+    }
+    
+    .slider {
+        position: relative;
+        
+        .btn-prev, .btn-next {
+            background-color: #000;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            opacity: .6;
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
+        
+        .btn-prev {
+            right: 60px;
+            z-index: 1;
+        }
+        
+        .btn-next {
+            right: 10px;
+        }
+        
+        .slider-text {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #fff;
+            padding: 30px 100px 40px 30px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .slider-text {
+        position: static !important;
+    }
+    
+    .col-lg-3:nth-child(1) { 
+        height: 80vh;
+    }
+}
+
+#item3 {
+    padding-top: 70px;
+    
+    .works {
+        overflow: hidden;
+        
+        img:hover {
+            transform: scale(1.05);
+            transition: transform .9s;
+        }
+    }
+}
+
+
+#item4 {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    
+    .news {
+        overflow: hidden;
+        position: relative;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 40px;
+        
+        img:hover {
+            transform: scale(1.05);
+            transition: transform .9s;
+        }
+        
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        h3 {
+            color: #565758;
+        }
+        
+        p {
+            color: @text-color;
+        }
+    }
+    
+}
+
+
+#item5 {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    
+    .col-md-8 {
+        margin: 0 auto;
+    }
+    
+    label {
+        font-weight: 600;
+        color: @text-color;
+        margin-bottom: 10px;
+    }
+    
+    a {
+        margin: 20px auto;
+    }
+    
+    
+}
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+
+footer {
+    .right {
+        text-align: right;
+        
+        i {
+            margin-left: 10px;
+        }
+    }
+}
+
+.fadeInUp_animation {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
