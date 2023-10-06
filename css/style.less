@@ -75,12 +75,31 @@ header {
     }
     
     .btn-next {
-        right: -50px;
+        right: -30px;
     }
     
     .btn-prev {
-        left: -50px;
+        left: -30px;
         z-index: 1;
+    }
+}
+
+@media (max-width: 659px) {
+    #portfolio .btn-next {
+        
+        right: 20%;
+    }
+    
+    #portfolio .btn-prev {
+        left: 20%;
+    }
+    
+    #portfolio {
+        padding-bottom: 10px;
+        .btn-next, .btn-prev {
+            margin-top: 10px;
+            top: 100%;            
+        }
     }
 }
 
@@ -106,15 +125,16 @@ header {
         i.fa-brands {
             font-size: 60px;
             margin-bottom: 10px;
+            margin-top: 10px;
         }
         
         img {
             margin-bottom: 10px;
+            margin-top: 10px;
         }
     }
     
     .experience {
-        
         h6 {color: @color;}
         p {font-weight: 600;}
     }
@@ -130,7 +150,7 @@ footer {
         text-decoration: none;
         
         &:hover {
-            color: @color;
+            color: grey;
         }
     }
     

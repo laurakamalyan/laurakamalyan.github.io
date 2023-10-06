@@ -24,7 +24,7 @@ $(function(){
 
 $(".responsive").slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     prevArrow: '<a class="btn btn-prev"><i class="fa-solid fa-chevron-left"></i></a>',
     nextArrow: '<a class="btn btn-next"><i class="fa-solid fa-chevron-right"></i></a>',
     responsive: [
