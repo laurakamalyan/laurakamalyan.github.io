@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Century Gothic;
+    src: url('../fonts/GOTHIC.TTF');
+}
+
+@menu-height: 50px;
+@background-color: #000;
+@text-color: #FFF;
+@text-font-family: Century Gothic;
+
+// Menu
+header{
+    height: @menu-height; 
+    
+    .menu{
+        height: @menu-height;
+        border-bottom: 0;
+        margin-bottom: 0;
+        background-color: @background-color;
+                
+        #responsive-menu{
+            
+            #left{
+                a{  
+                    color: @text-color;
+                    .img_menu{
+                        width: 35px;
+                        margin: -8px -10px 0px -5px;
+                    }
+                }              
+            }
+            
+            #right{
+                img{
+                    width: 30px;
+                    margin-top: -5px;
+                }
+                
+                .dropdown-leng {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    padding: 0 16px;
+                    z-index: 1;
+
+                    a img{        
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .dropdown-leng:hover .dropdown-content {
+                    display: block;
+                }             
+            }            
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .menu #responsive-menu{
+        background-color: @background-color;
+        text-align: center;       
+    }
+    
+    .dropdown-leng:hover{
+        padding-bottom: 55px;
+    }
+}
+
+// Section
+section{
+    .createCV{
+        width: 550px;
+        float: right;
+        margin-right: 25px;
+        font-family: @text-font-family;
+        
+        .p_title{
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .cv{
+            #cv_left{
+                width: 170px;
+                float: left;
+                background-color: #0d0f0f;
+                color: @text-color;
+                
+                .picture-container{
+                    position: relative;
+                    cursor: pointer;
+
+                    .picture{
+                        overflow: hidden;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        text-align: center;
+
+                        input[type="file"] {
+                            cursor: pointer;
+                            display: block;
+                            height: 100%;
+                            left: 0;
+                            opacity: 0 !important;
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                        }
+
+                        .picture-src{   
+                            width: 100px;
+                            margin-top: 30px;
+                            margin-bottom: 20px;   
+                        }
+                    }
+                }
+                
+                .about{
+                    text-align: center;
+                    
+                    .name{
+                        margin-bottom: 3px;
+                    }
+                }
+                
+                .contact{                    
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    margin-top: 60px;
+                    
+                    img{
+                        width: 10px;
+                    }
+                }
+                
+                .skills{
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    margin-top: 30px;
+                    
+                    #text{                        
+                        font-size: 11px;
+                        cursor: pointer;
+                    }
+                    
+                    input{
+                        width: 100%;
+                        display: none;
+                    }
+                }
+                
+                .follow{
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    
+                    .lab{
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                    
+                    input{
+                        width: 100%;
+                        margin-bottom: 2px;
+                    }
+                }
+                    
+                ._title{
+                    border-bottom: 1px solid #FFF;
+                }
+                
+                input{
+                    width: 130px;
+                    border-radius: 5px;
+                    border: 0;
+                    padding: 2px 5px;
+                    color: @background-color;
+                    font-size: 12px;
+                }
+            }
+            
+            #cv_right{
+                float: left;
+                padding-left: 30px;
+                width: 370px;
+                color: @background-color;  
+                
+                .marginTop{
+                    margin-top: 20px;
+                }
+                
+                input, textarea{
+                    font-size: 12px;
+                    color: #000;
+                }
+                
+                .btn{
+                    font-size: 12px;
+                }         
+                
+                .profile{
+                    margin-top: 40px;
+                }
+
+                p{
+                    border-bottom: 1px solid #000;
+                    font-weight: 600;
+                    padding-bottom: 8px;
+                }
+                
+                #workExperience, #education{
+                    font-size: 12px;
+                    margin-top: 10px;
+                    display: none;
+                }
+
+                #startDate, #endDate, #startDate2, #endDate2{
+                    font-size: 12px !important;
+                    width: 70px !important;
+                    display: inline !important;
+                }
+                
+                .references{
+                    label{
+                        font-weight: 400;
+                    }
+                    
+                    #email2{
+                        margin-left: 6px;
+                    }
+                }
+            }
+        } 
+        
+        .buttons{
+            text-align: center;            
+            
+            #btn_Download{
+                display: none;
+                margin: auto;
+            }
+            
+            #btn_Save, #btn_Download{
+                width: 152px;
+                padding: 0;
+                border-radius: 7px;
+                font-size: 17px;
+                border-color: @background-color;
+                color: @background-color;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// Footer
+footer{
+    font-family: @text-font-family;
+    background-color: @background-color;
+    color: @text-color;
+    padding: 15px 0 10px 30px;
+    #copyright{
+        margin-top: 40px;
+    }
+}
