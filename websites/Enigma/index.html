@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>ENIGMA</title>
+
+        <!-- Title icon -->
+        <link rel="shortcut icon" href="img/imgonline-com-ua-Transparent-backgr-Le6Pcq0e20WZvW.ico">
+
+        <!-- CSS --> 
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+        
+        <!-- JavaScript -->
+        <script src="js/js.js" defer></script>
+        
+        <!-- Typed -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>    
+        <script src="js/typed.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+   
+    <body>
+       <!-- Header -->
+       <header class="container-fluid">
+            <div class="row">
+                <p class="type text-center"></p>
+            </div>
+        </header>
+        
+       <!-- Menu -->
+       <nav class="menu navbar navbar-inverse navbar-static-top" id="menu">
+         
+          <div class="container-fluid">           
+           
+            <div class="navbar-header">               
+                <a class="navbar-brand" href="#">
+                   <img src="img/logo.png" alt="" class="img-logo"> ENIGMA
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Style</a></li>
+                    <li><a href="#">Runway</a></li>
+                </ul>
+           
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="btn btn-link button" type="button" data-toggle="modal" data-target="#modal-subscibe">Subscribe</a></li>
+                    <li class="socsites"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="socsites"><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="socsites"><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                </ul>
+            
+              </div>          
+              
+          </div>
+        </nav>
+               
+       <!-- Modal window subscribe -->
+       <div class="modal" id="modal-subscibe">
+           <div class="modal-dialog">
+               <div class="modal-content" id="content">
+                  
+                   <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal">
+                           <i class="fa fa-close"></i>
+                       </button>
+                       <h4 class="modal-title" id="title-modalWindow">Subscribe</h4> 
+                   </div>
+                   
+                   <div id="subscribing">
+                       <div class="modal-body">
+                           <p>Get your daily dose of fashion inspiration and style tips!</p>
+                           <input type="email" class="form-control" placeholder="Email address" id="email">
+                           <div id="validate"></div>
+                       </div>
+
+                       <div class="modal-footer">
+                          <button type="button" onclick="subscribe()">Subscribe</button>
+                       </div>
+                   </div>                  
+                   
+               </div>
+           </div>
+       </div>
+       
+       <!-- Section 1 -->
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/9d5460099f8f168d4265a3054dfded6c--makeup-course-black-white-fashion.jpg" alt="" class="img-responsive text-center">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/010e834c59ee3d7e6afa806e47a1c189--fashion-makeup-photography-fashion-portraits.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/46227930fdea25197227109f59dba0f6--black-white-fashion-fashion-portraits.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                   <img src="img/8ec3ba7533a52c3d3d952bb02a7f069f--high-ponytail-hairstyles-high-ponytails.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+               </div>
+           </div>
+       </div>
+       <hr>
+                           
+       <!-- Section 2 -->
+       <section class="container">
+           <div class="row">
+               <div class="section2">
+                   <img src="img/636096742373357996142416222_fashion-beauty-tips.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+               <div class="section2">
+                   <img src="img/01_17A_INBTQ_rightcrop.standard.2560.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+               <div class="section2">
+                   <img src="img/59afbdbadca849d37bd7f1ffa0e8dd22.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+               <div class="section2">
+                   <img src="img/11362149.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+               <div class="section2">
+                   <img src="img/Carolina_Herrera_AW14_12.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+               <div class="section2">
+                   <img src="img/AAEAAQAAAAAAAAegAAAAJDAxNzQ5ZDdjLTU0NzMtNDg2MC1hOWUxLWVlZjNhOTE5YzAxZg.jpg" alt="" class="img-responsive">
+                   <h4>Lorem ipsum</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ...</p>
+               </div>
+               
+           </div>
+        </section>
+       <br>
+       
+       <!-- Pages buttons -->
+       <div class="container text-center">
+           <div class="row">
+               <a href="#" class="btn btn-default page-btn">Previous</a>
+               <a href="#" class="btn btn-default page-btn">1</a>
+               <a href="#" class="btn btn-default page-btn">2</a>
+               <a href="#" class="btn btn-default page-btn">3</a>
+               <a href="#" class="btn btn-default page-btn">Next</a>
+           </div>
+       </div>
+       <br>
+       
+       <!-- Footer -->
+       <footer class="container-fluid">
+           <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                   <a href="#" class="footer-logo"><img src="img/logo.png" alt=""> <span>ENIGMA</span></a>
+                   <p class="copyright">&copy; 2011 Some copyright message</p>
+               </div>
+               
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                   <p>About us | Contact Us | bla bla | bla bla</p>
+               </div>
+               
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                    <a href="https://www.facebook.com" target="_blank" class="footer-icons"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="footer-icons"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="footer-icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>                  
+               </div>
+           </div>
+       </footer>
+       
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
