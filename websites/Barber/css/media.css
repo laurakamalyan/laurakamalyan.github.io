@@ -1,0 +1,236 @@
+@media screen and (min-width: 1420px) and (max-width: 1920px) {
+    #home {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .logo, .menu2 {
+        margin-top: 10px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn > input {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .menu2 {
+        text-align: center;
+    }
+
+    .padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #about > .about-content > h2,
+    #about > .about-content,
+    #about > .about-content > p {
+        padding-right: 0;
+    }
+
+    #about > .about-content > h2 {
+        font-size: 40px;
+    }
+
+    #about > .about-content > p {
+        font-size: 12px;
+    }
+
+    .products {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .products > div {
+        width: 45%;
+    }
+
+    #schedule > div:first-child {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    #schedule .p1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1039px) {
+    #home .content > p:first-child {
+        font-size: 16px;
+    }
+
+    #home .content > h1 {
+        font-size: 70px;
+    }
+
+    #home .content > h1 + p {
+        font-size: 30px;
+    }
+
+    #home .content > button {
+        padding: 15px 20px
+    }
+
+    #about > .about-content > h2 {
+        font-size: 40px;
+    }
+
+    .quotes {
+        font-size: 45px;
+    }
+
+    .quote {
+        font-size: 22px;
+    }
+
+    .author {
+        font-size: 16px;
+    }
+
+    #contact > div {
+        width: 95%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #contact > div > p:first-child {
+        font-size: 36px;
+    }
+
+    #contact > div > .tel {
+        font-size: 14px;
+    }
+
+    #video p {
+        font-size: 60px;
+    }
+
+    #team .team-text-bg {
+        width: 100%;
+    }
+
+    #team .team-member {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about, #services {
+        flex-direction: column;
+    }
+
+    #about > div, #services div {
+        width: 100%;
+    }
+
+    .products > div {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #testimonials {
+        padding: 80px 50px;
+    }
+
+    #schedule {
+        flex-direction: column;
+    }
+
+    #schedule > div:first-child,
+    #schedule .scroll {
+        width: 100%;
+    }
+
+    #schedule .scroll {
+        margin-top: 30px;
+    }
+
+    .input > input {
+        width: 70%;
+    }
+
+    #contact > div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #video p {
+        font-size: 30px;
+    }
+
+    #about > .about-content {
+        padding-left: 0;
+    }
+
+    #team .team-images > p {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #team .team-member {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .team-image {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .team-image > img {
+        width: 200px;
+    }
+
+    .team-member .text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    #contact > div > .tel,
+    .call-us {
+        float: none;
+    }
+
+    .input > button {
+        margin-top: 10px;
+    }
+
+    table td {
+        padding: 0;
+    }
+
+    .scroll-main > h4 ~ div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    table .currently {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+    }
+}

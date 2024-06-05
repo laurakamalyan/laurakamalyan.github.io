@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "oswald";
+    src: url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header#header {
+    font-family: oswald;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.bars {
+    float: left;
+    width: 40px;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+
+.bars > i {
+    font-size: 22px;
+}
+
+.logo {
+    float: right;
+}
+
+.logo > img {
+    width: 180px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 18px;
+    cursor: pointer;
+    height: 80px;
+}
+
+.menu > li > span,
+.menu > li > a {
+    text-transform: uppercase;
+    color: #29293a;
+    font-size: 15px;
+}
+
+.dropdown, .search {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #29293a;
+    top: 80px;
+    left: -30px;
+    display: none;
+    font-family: work-sans;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    animation-name: dropdown;
+    animation-duration: 0.3s;
+}
+
+.dropdown1 .dropdown-menu {
+    left: 30px;
+    width: 100%;
+}
+
+.dropdown1:nth-child(2) ul {
+    width: 50%;
+}
+
+.dropdown1:nth-child(6) .dropdown-menu {
+    padding: 0;
+}
+
+.dropdown1:nth-child(6) .dropdown-menu ul {
+    margin-left: 50px;
+}
+
+.menu > li:hover > span,
+.menu > li:hover > a,
+.menu .active {
+    color: #FF6600 !important;
+}
+
+.menu > li:hover > span > i,
+.menu > li:hover > a > i {
+    rotate: 180deg;
+    transition-duration: 0.5s;
+}
+
+.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown1:hover div.dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    width: 200px;
+}
+
+.dropdown-menu li > a { 
+    color: #74757f;
+}
+
+.dropdown-menu li:hover > a {
+    color: #fff;
+    animation-name: right-arrow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.dropdown-menu i {
+    display: none;
+}
+
+.dropdown-menu li:hover > a > i {
+    display: inline-block;
+}
+
+.image {
+    width: 250px;
+    background-image: url("../img/megamenu-banner-1-570x368.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+}
+
+.image > button {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    background-color: #FF6600;
+    border: 1px solid #FF6600;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+.image:hover > button {
+    display: block;
+}
+
+.image > button span {
+    display: inline-block;
+    animation-duration: 0.08s;
+}
+
+.image > button:hover span {
+    animation-name: button-hover;
+}
+
+.close {
+    display: none;
+}
+
+.search1 {
+    width: 10px;
+    height: 80px;
+    margin-top: 18px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.search1 > input {
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 1px #74757f;
+    border-radius: 3px;
+    width: 380px;
+    font-family: work-sans;
+    font-size: 16px;
+    display: none;
+}
+
+.search1:hover > input,
+.search1:hover .close {
+    display: block;
+}
+
+.search1:hover .close {
+    padding-top: 5px;
+}
+
+.search1:hover .search {
+    display: none;
+}
+
+/* Animation */
+@keyframes dropdown {
+    from {
+        top: 90px;
+    }
+    to {
+        top: 80px;
+    }
+}
+
+@keyframes right-arrow {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 5px;
+    }
+}
+
+@keyframes button-hover {
+    from {
+        transform: translateY(-8px);
+    }
+    to {
+        transform: translateY(8px);
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1199px) {
+    .navbar {
+        padding: 7px 0;
+        height: 60px;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .logo > img {
+        width: 150px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search1 {
+        margin-top: 8px;
+    }
+
+    .search1 > input {
+        width: 100vw;
+        top: 45px;
+        right: -109px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .search1 > input {
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 315px) { 
+    .logo > img {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .bars > i {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 296px) {
+    .search1 > input {
+        right: -30px;
+    }
+}

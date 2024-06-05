@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #FF6600;
+    border-radius: 4px;
+    padding: 10px 13px;
+    color: #fff;
+}
+
+footer#footer {
+    background-color: #212121;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-family: work-sans;
+}
+
+#footer > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    width: 30%;
+}
+
+.footer-item:nth-child(2) {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-item p, .footer-item li,
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 22px;
+}
+
+.footer-item li {
+    margin-bottom: 10px;
+}
+
+.footer-item li i {
+    color: #FF6600;
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.footer-item li > .icon {
+    float: left;
+    height: 40px;
+    
+}
+
+.footer-item li > .p1 {
+    float: left;
+}
+
+.footer-item .li1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-item .form-div {
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer-item .form-div > input,
+.footer-item .form-div > button {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer-item .form-div > input {
+    width: 100%;
+    padding: 13px;
+}
+
+.footer-item .form-div > button {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    background-color: #FF6600;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.footer-item .form-div > button > i {
+    animation-duration: 0.08s;
+}
+
+.footer-item .form-div > button:hover > i {
+    animation-name: button-hover;
+}
+
+.footer-bottom {
+    margin-top: 70px;
+}
+
+.footer-bottom img {
+    width: 180px;
+}
+
+.footer-bottom p:last-child {
+    margin-top: 25px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-item:first-child {
+        width: 100%;
+    }
+
+    .footer-item:nth-child(2),
+    .footer-item:last-child {
+        width: 50%;
+        align-items: self-start;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-bottom {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-item {
+        width: 100% !important;
+    }
+}

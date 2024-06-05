@@ -1,0 +1,293 @@
+@media screen and (max-width: 1420px) {
+    #tours.padding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+} 
+
+@media screen and (max-width: 1320px) {
+    .flex-posts {
+        flex-wrap: wrap;
+    }
+
+    .post-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    #logo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #home {
+        margin-top: 60px;
+    }
+    
+    #home .bg-color {
+        padding: 80px;
+    }
+
+    #advantages.padding {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testimonials-content > p:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1081px) {
+    #book-tour .background-color .button-learn-more {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1076px) {
+    .img5 {
+        display: none;
+    }
+
+    .logo-circles {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #team .flex-item {
+        width: 47%;
+    }
+
+    #offer > .flex-container > .flex-item {
+        width: 30%;
+        margin-bottom: 80px;
+    }
+
+    .testimonials-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #questions > .flex-questions {
+        flex-wrap: wrap;
+    }
+
+    #questions > .flex-questions > .flex-question {
+        width: 100%;
+    }
+
+    .flex-question > h3 {
+        margin-top: 40px;
+    }
+
+    #questions > .flex-questions > .flex-question h3 {
+        font-size: 28px;
+    }
+
+    .questions-menu > li {
+        padding-left: 30px;
+    }
+
+    .questions-menu > li:before { 
+        left: 0;
+    }
+
+    .flex-posts {
+        justify-content: center;
+    }
+
+    .post-item {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    .skills {
+        margin-top: 30px;
+    }
+
+    #posts .button-learn-more {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    .title {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .img4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #home {
+        position: relative;
+    }
+
+    #home .bg-color {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-right: 160px;
+    }
+
+    #home .bg-image {
+        width: 100%;
+        min-height: 90vh;
+        flex-direction: row;
+    }
+
+    #home .bg-color > p,
+    #home .bg-color > h1 {
+        color: #fff;
+    }
+
+    .circle {
+        margin: 20px 5px;
+        z-index: 1;
+    }
+
+    h1, .p2 {
+        font-size: 35px;
+    }
+
+    .button-learn-more {
+        margin-top: 20px;
+    }
+
+    #offer > .flex-container > .flex-item {
+        width: 47%;
+    }
+
+    #testimonials > .flex-slide {
+        justify-content: space-between;
+    }
+
+    .slide-item {
+        display: none;
+    }
+
+    .testimonials-content > p:last-child {
+        font-size: 16px;
+    }
+
+    #testimonials > .flex-slide > .flex-item i {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .background-color .button-learn-more {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #logo > img {
+        margin: 10px 5px;
+    }
+
+    .img3 {
+        display: none;
+    }
+
+    .post-item p:last-child {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 591px) {
+    #advantages .flex-container > .flex-item {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .title > h2,
+    .h2 {
+        font-size: 23px;        
+    }
+
+    #book-tour > .background-color > div:first-child {
+        font-size: 26px;
+    }
+
+    .background-color > div:first-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) { 
+    .padding {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #home .bg-image {
+        height: 100vh;
+    }
+
+    #home .bg-color {
+        padding: 30px;
+    }
+
+    #tours .flex-item {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #team .flex-item {
+        width: 100%;
+    }
+
+    #offer > .flex-container > .flex-item {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    #home .bg-image {
+        height: 120vh;
+    }
+
+    .title {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #offer > .flex-container > .flex-item {
+        width: 80%;
+    }
+
+    .button-learn-more {
+        font-size: 16px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 296px) { 
+    .padding {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    #logo > img {
+        height: 70px;
+    }
+}

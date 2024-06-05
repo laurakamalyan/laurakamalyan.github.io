@@ -1,0 +1,882 @@
+@font-face {
+    font-family: "monserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "teko";
+    src: url("../fonts/Teko-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #181818;
+}
+
+.padding {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.button {
+    padding: 18px 48px;
+    font-family: monserrat;
+    border: 1px solid #c59d5f;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c59d5f;
+}
+
+body {
+    position: relative;
+}
+
+/* Header */
+#header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bars {
+    display: none;
+}
+
+.bars:hover .menu1{
+    display: block;
+}
+
+.bars > i {
+    background-color: #0000009c;
+    padding: 10px;
+    color: #fff;
+    font-size: 26px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 62px 0;
+}
+
+.logo {
+    margin-top: -42px;
+}
+
+.navbar > ul > li {
+    display: inline-block;
+    font-family: monserrat;
+}
+
+.menu1 li > a {
+    margin-right: 12px;
+}
+
+.menu1 > li > a,
+.btn > input {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+
+ul.menu2 > li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+ul.menu2 li > a {
+    color: #fff;
+}
+
+.btn > input {
+    border: 1px solid #c59d5f;
+    background-color: transparent;
+    padding: 15px 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar > ul > li:hover > a {
+    color: #c59d5f;
+}
+
+.btn > input:hover {
+    background-color: #c59d5f;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: relative;
+    height: 40px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 37px;
+    background-color: #fff;
+    width: 160px;
+    padding: 7px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > li {
+    padding: 4.5px;
+    font-size: 13px;
+    font-family: monserrat;
+}
+
+.dropdown-menu > li > a {
+    color: #000;
+}
+
+.dropdown-menu > li:hover > a {
+    color: #c59d5f;
+}
+
+/* Home Section */
+#home {
+    height: 125vh;
+    padding-top: 70px;
+    background-image: url("../img/mt-2038-header-bg01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content {
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#home .content > p:first-child {
+    font-size: 21px;
+    word-spacing: 6px;
+    letter-spacing: 6px;
+    font-family: monserrat;
+    font-weight: 600;
+}
+
+#home .content > h1,
+#home .content > h1 + p {
+    font-family: teko;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#home .content > h1 {
+    font-size: 100px;
+}
+
+#home .content > h1 + p {
+    font-size: 80px;
+    margin-top: -35px;
+}
+
+#home .content > button {
+    background-color: #c59d5f;
+    color: #fff;
+    border: 1px solid #c59d5f;
+    padding: 25px 60px;
+    font-family: monserrat;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#home .content > button:hover {
+    background-color: transparent;
+    color: #c59d5f;
+}
+
+/* About Section */
+#about {
+    background-image: url("../img/mt-2038-about-bg01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: monserrat;
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+#about > div {
+    width: 50%;
+}
+
+#about img {
+    width: 100%;
+}
+
+#about > .about-content {
+    padding: 20px 80px 10px 50px;
+}
+
+#about > .about-content > h2 {
+    font-family: teko;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+#about > .about-content > h2 > span {
+    color: #c59d5f;
+}
+
+#about > .about-content > p {
+    padding-right: 70px;
+    margin-bottom: 40px;
+}
+
+/* Services Section */
+#services {
+    background-image: url("../img/mt-2038-pricing-text-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    text-align: center;
+    font-family: monserrat;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#services > div {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.border-right {
+    border-right: 1px solid #c59d5f;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+#services div {
+    width: 33.1%;
+    padding: 20px;
+}
+
+#services h3 {
+    font-family: teko;
+    font-size: 33px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#services p {
+    line-height: 24px;
+    font-size: 15px;
+}
+
+#services h3, #services p {
+    color: #fff;
+}
+
+#services img, #services span {
+    color: #c59d5f;
+}
+
+/* Gallery Section */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery > div {
+    width: 25%;
+    margin-bottom: -4px;
+    cursor: pointer;
+    position: relative;
+}
+
+#gallery > div .bg-color {
+    background-color: #c59c5f71;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+#gallery > div:hover .bg-color {
+    display: block;
+}
+
+#gallery > div .bg-color > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gallery > div > img {
+    width: 100%;
+}
+
+/* Section 5 */
+#team {
+    background-image: url("../img/mt-2038-team-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .team-text-bg {
+    width: 50%;
+    background-image: url("../img/mt-2038-team-text.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#team .team-content {
+    text-align: center;
+}
+
+#team h2,
+#product h2 {
+    font-family: teko;
+    font-size: 60px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#team h2 > span,
+#product h2 > span {
+    color: #c59d5f;
+}
+
+#team p,
+#product p.text {
+    font-family: monserrat;
+    line-height: 24px;
+    color: #fff;
+}
+
+#team .team-images {
+    margin: 20px 50px;
+}
+
+#team .team-images > p {
+    padding-bottom: 20px;
+    display: inline-block;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 95px;
+}
+
+#team .team-images > p:first-child,
+#team .team-images > p:hover {
+    border-bottom: 3px solid #c59d5f;
+}
+
+#team .team-images > p > img {
+    width: 80px;
+}
+
+#team .team-member {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-image {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.team-image > img {
+    width: 100%;
+}
+
+.team-member .text {
+    padding: 20px;
+    width: 60%;
+    position: relative;
+}
+
+.team-member .text h3 {
+    font-family: teko;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.team-member .text p {
+    font-size: 14px;
+    margin: 10px 0 28px;
+}
+
+.team-member .icons {
+    width: 10%;
+    padding-top: 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.team-member .icons > i {
+    margin: 15px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.team-member .icons > i:hover {
+    color: #c59d5f;
+}
+
+.team-member .border-right {
+    height: 180px;
+    top: 20px;
+}
+
+/* Video Section */
+#video {
+    background-image: url("../img/mt-2038-video-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#video i {
+    color: #fff;
+    font-size: 70px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#video i:hover {
+    color: #c59d5f;
+}
+
+#video p {
+    font-family: teko;
+    color: #c59d5f;
+    font-size: 80px;
+}
+
+#video p > span {
+    color: #fff;
+}
+
+#video .p2 {
+    margin-top: -43px;
+}
+
+/* Product Section */
+#product {
+    text-align: center;
+}
+
+#product > div:first-child {
+    background-image: url("../img/mt-2038-shop-text-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
+}
+
+#product .text {
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    color: #fff;
+}
+
+.products > div {
+    background-color: #212121;
+    margin: 15px;
+    padding: 20px;
+}
+
+.products h3 {
+    font-family: teko;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.products p {
+    font-size: 14px;
+    font-family: monserrat;
+    line-height: 20px;
+}
+
+.products .price {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c59d5f;
+}
+
+.h3 {
+    margin-top: -10px !important;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-image: url("../img/mt-2038-testimonials-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 150px;
+    text-align: center;
+}
+
+.quotes {
+    color: #c59d5f;
+    font-size: 75px;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-size: 36px;
+    font-family: teko;
+}
+
+.author {
+    font-size: 20px;
+    font-family: monserrat;
+}
+
+.quote, .author {
+    color: #fff;
+}
+
+/* Schedule Section */
+#schedule {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#schedule > div:first-child {
+    color: #fff;
+    width: 30%;
+    margin-right: 15%;
+}
+
+#schedule .p1 {
+    font-size: 45px;
+    font-family: teko;
+}
+
+#schedule p:first-child > span {
+    color: #c59d5f;
+}
+
+#schedule p:last-child {
+    font-family: monserrat;
+}
+
+#schedule .scroll {
+    width: 55%;
+    height: 140vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding-top: 30px;
+    font-family: monserrat;
+}
+
+.scroll-menu {
+    text-align: right;
+    padding: 0 30px 30px;
+}
+
+.scroll-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+}
+
+.scroll-menu li:hover {
+    border-bottom-color: #000;
+}
+
+.scroll-menu li > a {
+    color: #181818;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.scroll-main {
+    padding: 0 30px;
+}
+
+.scroll-main > h4 {
+    text-align: center;
+    margin: 50px;
+}
+
+.scroll-main > h4 + p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.scroll-main > h4 ~ div {
+    box-shadow: 0 0 6px #ddd;
+    margin: 20px 0 35px;
+    padding: 30px;
+}
+
+.div1 {
+    font-size: 13px;
+}
+
+.div1 + p {
+    color: gray;
+    line-height: 26px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table td {
+    color: #ddd;
+    cursor: default;
+    padding: 10px;
+}
+
+table .active {
+    color: #000;
+}
+
+table .currently {
+    background-color: #181818;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.month {
+    display: flex;
+}
+
+.month i {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.month > p {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.month > p:first-child {
+    width: 80%;
+}
+
+.month > p:last-child {
+    width: 20%;
+    text-align: right;
+}
+
+.month > p:hover {
+    background-color: #D0D0D0;
+}
+
+.timezone {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.time > p {
+    cursor: pointer;
+    padding: 20px 50px;
+    width: 46%;
+    border: 1px solid #D0D0D0;
+    margin: 2%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.time > p:hover {    
+    background-color: #D0D0D0;
+}
+
+.scroll-footer > p:first-child {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.scroll-footer > p:last-child {
+    font-size: 14px;
+}
+
+/* Contact Section */
+#contact {
+    background-image: url("../img/mt-2038-contact-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-family: teko;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact > div {
+    width: 65%;
+    margin: 20px;
+    padding: 50px 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#contact > div > p:first-child {
+    font-size: 56px;
+    letter-spacing: 1px;
+}
+
+#contact > div > .tel {
+    font-size: 20px;
+    float: right;
+    border-top: 1px solid #c59d5f;
+    border-bottom: 1px solid #c59d5f;
+    padding: 20px;
+    font-family: monserrat;
+}
+
+.call-us {
+    float: left;
+}
+
+.float-items::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.input > input {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.input > button {
+    background-color: #c59d5f;
+    border: 1px solid #c59d5f;
+    padding: 10px 20px;
+    color: #fff;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+.input > button:hover {
+    background-color: transparent;
+    color: #c59d5f;
+
+}
+
+/* Footer */
+#footer > .footer {
+    padding: 70px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#footer > .footer .footer-logo {
+    border-bottom: 1px solid #c59d5f;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+#footer > .footer .social-icons > i {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#footer > .footer .social-icons > i:hover {
+    background-color: #c59d5f
+}
+
+.copyright {
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: monserrat;
+    font-size: 14px;
+}
+
+.arrow-up {
+    width: 60px;
+    height: 60px;
+    background-color: #c59d5f;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.arrow-up > a {
+    color: #fff;
+    font-family: monserrat;
+    font-size: 25px;
+}
