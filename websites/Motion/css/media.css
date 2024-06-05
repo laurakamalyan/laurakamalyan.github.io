@@ -1,0 +1,145 @@
+@media screen and (min-width: 1681px) and (max-width: 1920px) {
+    header#header {
+        min-height: 70vh;
+    }
+
+    header#header > .flex > h1 {
+        font-size: 93px;
+        margin-top: 16px;
+    }
+
+    header#header > .flex > p {
+        font-size: 28px;
+        line-height: 48px;
+        word-spacing: -3px;
+    }
+
+    .down-arrow {
+        width: 75px;
+        height: 75px;
+        margin-top: 14px;
+    }
+
+    #main {
+        padding: 50px 239px;
+    }
+
+    #main > #cards > .flex-container > div {
+        margin-bottom: 20px;
+    }
+
+    #main .main-card > h3 {
+        font-size: 23px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    #main .main-text {
+        font-size: 18px;
+    }
+
+    footer#footer .footer-title {
+        font-size: 32px;
+    }
+
+    footer#footer .footer-text,
+    footer#footer .copyright {
+        font-size: 18px;
+    }
+
+    footer#footer .icons p {
+        width: 70px;
+        height: 70px;
+    }
+    
+    footer#footer .icons p > a > i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #main > #cards > .flex-container > div {
+        width: 48.5%;
+    }
+
+    #main {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    footer#footer > .footer-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    header#header {
+        min-height: 85vh;
+    }
+
+    header#header > .flex > h1 {
+        font-size: 48px;
+    }
+
+    header#header > .flex > p {
+        padding: 0 20px;
+    }
+
+    #main > #cards > .flex-container > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 627px) {
+    header#header > .flex > p > br {
+        display: none;
+    }
+
+    #main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    header#header {
+        min-height: 95vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header#header {
+        min-height: 84vh;
+    }
+
+    header#header > .flex > p {
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header#header {
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    footer#footer .icons p {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    header#header {
+        min-height: 81vh;
+    }
+
+    header#header > .flex > p {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
